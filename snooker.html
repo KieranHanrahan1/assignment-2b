@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Exploring Snooker: History, Techniques, and Championships</title>
+
+</head>
+<body>
+
+	<ul>
+        <li><a href="NFL.html">NFL</a></li>
+		<li><a href="Index.html">Football</a></li>
+        <li><a class="active" href="Darts.html">Darts</a></li>
+        <li><a href="Golf.html">Golf</a></li>
+        <li style="float:right"><a href="basketball.html">Basketball</a></li>
+      </ul>
+	  
+	  
+
+
+    <header>
+        <h1>Exploring Snooker: History, Techniques, and Championships</h1>
+    </header>
+
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Snooker is a cue sport that has gained popularity around the world for its precision, strategy, and finesse. This article delves into the history of snooker, various techniques used by players, and highlights some of the major championships in the sport.</p>
+    </section>
+
+    <section id="history">
+        <h2>History of Snooker</h2>
+        <p>Snooker originated in the latter half of the 19th century as an indoor alternative to billiards. The game evolved over time, with standardized rules established in the early 20th century. Since then, snooker has grown into a global sport, with professional players competing in tournaments across the world.</p>
+    </section>
+
+    <section id="techniques">
+        <h2>Techniques in Snooker</h2>
+        <p>Success in snooker requires mastery of various techniques, including stance, grip, and cue action. Players must demonstrate precision and control in potting balls, positioning the cue ball, and executing safety shots. Professional snooker players spend years honing their skills to compete at the highest level.</p>
+    </section>
+
+    <section>
+        <h2>Major Championships</h2>
+        <p>Several prestigious championships showcase the best talent in the world of snooker. Events like the World Snooker Championship, UK Championship, and Masters attract top players from around the globe, competing for significant prize money and coveted titles. These championships offer thrilling matches and unforgettable moments for snooker enthusiasts.</p>
+    </section>
+
+    <section class="img-container" id="related-image">
+        <img src="https://th.bing.com/th/id/OIP.cjoCAmA7OdtaIJmGcOPbvQHaGd?w=192&h=180&c=7&r=0&o=5&pid=1.7" alt="Snooker Image" style="max-width: 100%; height: auto;">
+    </section>
+
+    <section id="related-video">
+        <h2>Related Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VtqpKq2w7s0" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>Snooker continues to captivate players and fans alike with its blend of skill, strategy, and excitement. Whether watching a thrilling match or playing a friendly game with friends, snooker offers a unique and rewarding experience for enthusiasts of all levels.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var intro = document.getElementById('intro');
+            var history = document.getElementById('history');
+            var techniques = document.getElementById('techniques');
+            var championships = document.getElementById('championships');
+            var relatedImage = document.getElementById('related-image');
+            var relatedVideo = document.getElementById('related-video');
+
+            var introPosition = intro.getBoundingClientRect().top;
+            var historyPosition = history.getBoundingClientRect().top;
+            var techniquesPosition = techniques.getBoundingClientRect().top;
+            var championshipsPosition = championships.getBoundingClientRect().top;
+            var relatedImagePosition = relatedImage.getBoundingClientRect().top;
+            var relatedVideoPosition = relatedVideo.getBoundingClientRect().top;
+
+            var screenHeight = window.innerHeight;
+
+            if (introPosition < screenHeight) {
+                intro.style.backgroundColor = '#f4f4f4';
+            } else {
+                intro.style.backgroundColor = 'transparent';
+            }
+
+            if (historyPosition < screenHeight) {
+                history.style.backgroundColor = '#f4f4f4';
+            } else {
+                history.style.backgroundColor = 'transparent';
+            }
+
+            if (techniquesPosition < screenHeight) {
+                techniques.style.backgroundColor = '#f4f4f4';
+            } else {
+                techniques.style.backgroundColor = 'transparent';
+            }
+
+            if (championshipsPosition < screenHeight) {
+                championships.style.backgroundColor = '#f4f4f4';
+            } else {
+                championships.style.backgroundColor = 'transparent';
+            }
+
+            if (relatedImagePosition < screenHeight) {
+                relatedImage.style.opacity = '1';
+            } else {
+                relatedImage.style.opacity = '0';
+            }
+
+            if (relatedVideoPosition < screenHeight) {
+                relatedVideo.style.opacity = '1';
+            } else {
+                relatedVideo.style.opacity = '0';
+            }
+        });
+    </script>
+</body>
+</html>
